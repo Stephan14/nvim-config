@@ -1,4 +1,4 @@
-vim.g.mapleader = ';'
+vim.g.mapleader = '\\'
 
 local function set_bg_light()
     vim.cmd('set background=light')
