@@ -67,9 +67,9 @@ function M.config()
         -- and/or add additional.
         panel_groups = {
             explorer = {
-                bufferlist.Name,
-                outline.Name,
                 explorer.Name,
+                outline.Name,
+                bufferlist.Name,
             },
             terminal = { terminal.Name },
             git = {
@@ -86,7 +86,7 @@ function M.config()
         },
         -- default panel sizes for the different positions
         panel_sizes = {
-            left = 30,
+            left = 40,
             right = 30,
             bottom = 15
         }
