@@ -30,6 +30,11 @@ vim.keymap.set('n', '<F9>', function() telescope.find_files {} end)
 vim.keymap.set('n', '<F10>', function() telescope.git_files {} end)
 vim.keymap.set('n', '<F11>', function() telescope.buffers {} end)
 vim.keymap.set({ 'n', 'i' }, '<C-p>', function() telescope.registers {} end)
+-- window jump
+vim.keymap.set('n', '<C-J>', '<C-W>j')
+vim.keymap.set('n', '<C-K>', '<C-W>k')
+vim.keymap.set('n', '<C-L>', '<C-W>l')
+vim.keymap.set('n', '<C-H>', '<C-W>h')
 -- w: window
 vim.keymap.set('n', '<leader>w1', '<c-w>o')
 vim.keymap.set('n', '<leader>wx', ':x<cr>')
