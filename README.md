@@ -55,4 +55,33 @@ Report an issue If you have issues (don't DM me on social media, report an issue
 
 ### Adding more things
 
-You don't, this isn't a neovim distribution, so fork it and make changes from there.
+For now, you don't, this is *my personal config*. However if there's any problem with the documentation above feel free to correct or add more details by a PR.
+
+## 快捷键
+
+- 插入模式下, ctrl+g 等价于esc
+- 正常模式下，\+v+l 等价于切换成白色背景
+- 正常模式下，\+v+d 等价于切换成黑色背景
+
+### 展示状态栏
+- 正常模式下，\+w+8 等价于展示/隐藏左侧文件目录
+- 正常模式下，\+w+9 等价于展示/隐藏右侧git信息
+
+### 搜索
+- 正常模式下，F9 等价于展示所有文件并进行搜索
+- 正常模式下，F11 等价于展示在buffer中文件并进行搜索
+- 正常模式下，ctrl+p 等价于展示在buffer中文件并进行搜索
+- 正常模式下，\+s+s 等价于在当前文件中搜索
+- 正常模式下，\+s+w 等价于在所有文件中搜索
+
+
+### 窗口操作
+- 正常模式下，w1等价于最小化其他窗口，最大化当前窗口
+- 正常模式下，wx等价于写入文件并退出
+- 正常模式下，w2等价于横向分屏
+- 正常模式下，w2等价于纵向分屏
+
+- 正常模式下，m-9等价于向左调整窗口
+- 正常模式下，m-0等价于向右调整窗口
+- 正常模式下，m--等价于向上调整窗口
+- 正常模式下，m-=等价于向下调整窗口
