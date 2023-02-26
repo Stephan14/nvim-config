@@ -73,3 +73,16 @@ Discussions could be in either English or Chinese, although English is preferred
 ### Adding more things
 
 For now, you don't, this is *my personal config*. However if there's any problem with the documentation above feel free to correct or add more details by a PR.
+
+## 快捷键
+
+- 插入模式下, ctrl+g 等价于esc
+- 正常模式下，\+v+l 等价于切换成白色背景
+- 正常模式下，\+v+d 等价于切换成黑色背景
+
+- 正常模式下，\+w+8 等价于展示/隐藏左侧文件目录
+- 正常模式下，\+w+9 等价于展示/隐藏右侧git信息
+
+- 正常模式下，F9 等价于展示所有文件并进行搜索
+- 正常模式下，F11 等价于展示在buffer中文件并进行搜索
+- 正常模式下，ctrl+p 等价于展示在buffer中文件并进行搜索
