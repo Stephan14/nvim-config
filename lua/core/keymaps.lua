@@ -74,7 +74,7 @@ vim.keymap.set('n', '<leader>la', ':Lspsaga code_action<cr>')
 vim.keymap.set('n', '<F12>', ':Lspsaga code_action<cr>')
 
 vim.keymap.set('n', '<leader>gd', ':Glance definitions<CR>')
-vim.keymap.set('n', '<F4>', ':Glance references<CR>')
+vim.keymap.set('n', '<leader>gr', ':Glance references<CR>')
 vim.keymap.set('n', '<leader>gt', ':Glance type_definitions<CR>')
 vim.keymap.set('n', '<leader>gi', ':Glance implementations<CR>')
 vim.keymap.set('n', '<leader>gN', ':Lspsaga diagnostic_jump_prev<cr>')
