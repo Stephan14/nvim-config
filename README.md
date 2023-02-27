@@ -84,7 +84,7 @@ For now, you don't, this is *my personal config*. However if there's any problem
 - 正常模式下，\+w+8 等价于展示/隐藏左侧文件目录
 - 正常模式下，\+w+9 等价于展示/隐藏右侧git信息
 
-### 搜索
+### 搜索操作
 - 正常模式下，\+s+f 等价于展示所有文件并进行搜索
 - 正常模式下，F11 等价于展示在buffer中文件并进行搜索
 - 正常模式下，ctrl+p 等价于展示在buffer中文件并进行搜索
@@ -103,9 +103,15 @@ For now, you don't, this is *my personal config*. However if there's any problem
 - 正常模式下，m--等价于向上调整窗口
 - 正常模式下，m-=等价于向下调整窗口
 
-### 跳转
+### 跳转操作
 - 正常模式下，\+g+d等价于跳转到定义
 - 正常模式下，\+g+r等价于查找引用函数和变量的地方
 - 正常模式下，\+g+t等价于跳转到类型定义
 - 正常模式下，\+g+i等价于挑战到函数实现
+
+
+### 终端操作
+- 终端模式下，ctrl+g等价于退出终端模式
+- 正常模式下，\+t+t等价于终端弹出方式为tab
+- 正常模式下，\+t+f等价于终端弹出方式为浮窗
 
