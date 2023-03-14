@@ -1,6 +1,8 @@
 -- basicsinit
 vim.cmd('syntax on')
 vim.cmd('filetype plugin indent on')
+vim.cmd('autocmd BufWritePre * lua vim.lsp.buf.formatting_sync()')
+
 vim.opt.number         = true
 vim.opt.relativenumber = true
 vim.opt.termguicolors  = true
