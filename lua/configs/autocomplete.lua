@@ -108,7 +108,7 @@ function M.config()
     -- nvim-lspconfig config
     -- List of all pre-configured LSP servers:
     -- github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
-    local servers = { 'clangd', 'rust_analyzer', 'pylsp', 'lua_ls', 'sourcekit', 'html', 'cssls', 'gopls' }
+    local servers = { 'clangd', 'rust_analyzer', 'pylsp', 'lua_ls', 'html', 'cssls', 'gopls' }
     for _, lsp in pairs(servers) do
         require('lspconfig')[lsp].setup {}
     end
