@@ -66,6 +66,15 @@ function M.config()
     end
     local luasnip = require("luasnip")
 
+    local nlspsettings = require("nlspsettings")
+    nlspsettings.setup({
+        config_home = vim.fn.stdpath('config') .. '/nlsp-settings',
+        local_settings_dir = ".nlsp-settings",
+        local_settings_root_markers_fallback = { '.git' },
+        append_default_schemas = true,
+        loader = 'json'
+    })
+
     cmp.setup({
         mapping = {
             ["<C-n>"] = cmp.mapping(function(fallback)
@@ -108,7 +117,7 @@ function M.config()
     -- nvim-lspconfig config
     -- List of all pre-configured LSP servers:
     -- github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
-    local servers = { 'clangd', 'rust_analyzer', 'pylsp', 'lua_ls', 'html', 'cssls', 'gopls' }
+    local servers = { 'clangd', 'rust_analyzer', 'pylsp', 'html', 'cssls', 'gopls' }
     for _, lsp in pairs(servers) do
         require('lspconfig')[lsp].setup {}
     end
