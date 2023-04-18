@@ -16,7 +16,7 @@ You're supposed to fork this repo and work from there (as oppose to cloning it a
 1. Clone this repo into `~/.config/nvim`:
 
 ```
-git clone https://github.com/leslie255/nvim-config.git ~/.config/nvim
+git clone  https://github.com/Stephan14/nvim-config.git ~/.config/nvim
 ```
 
 2. Set up LSP
