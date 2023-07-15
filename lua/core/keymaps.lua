@@ -16,14 +16,23 @@ end
 
 -- keymaps
 vim.keymap.set('i', '<C-g>', '<esc>')
+vim.keymap.set('i', '<M-n>', '<up>')
+vim.keymap.set('i', '<M-p>', '<down>')
+vim.keymap.set('i', '<M-f>', '<right>')
+vim.keymap.set('i', '<M-b>', '<left>')
+vim.keymap.set('n', '<M-n>', '<down>')
+vim.keymap.set('n', '<M-p>', '<up>')
+vim.keymap.set('n', '<M-f>', '<right>')
+vim.keymap.set('n', '<M-b>', '<left>')
 vim.keymap.set('i', '<C-;>', '::') -- for C++ and Rust
 vim.keymap.set('n', '<leader>vl', set_bg_light)
 vim.keymap.set('n', '<leader>vd', set_bg_dark)
 vim.keymap.set('n', '<leader>', ':')
--- w: workspace
-vim.keymap.set('n', '<leader>w8', ':Workspace LeftPanelToggle<cr>')
-vim.keymap.set('n', '<leader>w9', ':Workspace RightPanelToggle<cr>')
-vim.keymap.set('n', '<leader>w0', ':Workspace BottomPanelToggle<cr>')
+
+-- f: file tree
+vim.keymap.set('n', '<F3>', ':NvimTreeToggle<cr>')
+vim.keymap.set('n', '<leader>ft', ':NvimTreeToggle<cr>')
+
 -- y: telescope
 local telescope = require 'telescope.builtin'
 vim.keymap.set('n', '<leader>sf', function() telescope.find_files {} end)
