@@ -118,9 +118,17 @@ function M.config()
     -- List of all pre-configured LSP servers:
     -- github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
     local servers = { 'clangd', 'rust_analyzer', 'pylsp', 'html', 'cssls', 'gopls' }
+    local lspconfig = require('lspconfig')
     for _, lsp in pairs(servers) do
-        require('lspconfig')[lsp].setup {}
+        lspconfig[lsp].setup {}
     end
+    lspconfig.rust_analyzer.setup {                
+        settings = {                      
+            ["rust-analyzer"] = {
+                procMacro = { enable = true },
+            }
+        }
+    }
 
     require("lspsaga").setup({
         ui = {
