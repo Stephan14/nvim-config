@@ -59,11 +59,7 @@ local duck = require("duck")
 vim.keymap.set('n', '<leader>dd', function() duck.hatch("🦆", 1) end, {})
 vim.keymap.set('n', '<leader>dk', function() duck.cook() end, {})
 
-require("indent_blankline").setup {
-    space_char_blankline = " ",
-    show_current_context = true,
-    show_current_context_start = true,
-}
+require("ibl").setup {}
 
 require("configs.autocomplete").config()
 require("configs.statusline").config()
