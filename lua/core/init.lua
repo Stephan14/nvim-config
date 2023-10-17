@@ -23,6 +23,7 @@ vim.opt.expandtab     = true
 vim.opt.autowrite     = false
 vim.opt.wrap          = false
 vim.opt.formatoptions = ''
+vim.opt.signcolumn = "yes" -- prevent sign column flickering
 
 require("core.plugins")
 require("core.gui")
@@ -42,13 +43,6 @@ vim.g.loaded_netrw             = 1
 vim.g.loaded_netrwPlugin       = 1
 vim.g.loaded_tutor_mode_plugin = 1
 vim.g.loaded_remote_plugins    = 1
-require("core.theme")
-
-require('image').setup {
-    min_padding = 5,
-    show_label = true,
-    render_using_dither = true,
-}
 
 -- Load plugin configs
 -- plugins without extra configs are configured directly here
@@ -69,10 +63,13 @@ require("configs.git").config()
 require("configs.bufferline").config()
 require("configs.grammar").config()
 require("configs.terminal").config()
-require("configs.ide").config()
+require("configs.nvimtree").config()
 require("configs.scrollbar").config()
 require("configs.telescope").config()
+require("configs.leetcode").config()
 
 require("configs.lang.rust").config()
 
 require("core.keymaps")
+
+require("core.theme")
