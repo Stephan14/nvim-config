@@ -1,8 +1,7 @@
 # My personal modern NeoVim config
 
 
-<img src="https://i.imgur.com/MRHEtoO.png" alt="Autocomplete" width="49%"/>
-<img src="https://i.imgur.com/6favuEM.png" alt="Git diff" width="49%"/><br>
+<img src="https://i.imgur.com/MRHEtoO.png" alt="Autocomplete" width="49%"/> <img src="https://i.imgur.com/6favuEM.png" alt="Git diff" width="49%"/><br>
 <img src="https://i.imgur.com/adZiidz.png" alt="Doc preview" width="49%"/>
 <img src="https://i.imgur.com/FWuzSqD.png" alt="Glance" width="49%"/><br>
 <img src="https://i.imgur.com/lh8K1GW.png" alt="Floating terminal" width="49%"/><br>
@@ -79,6 +78,7 @@ For now, you don't, this is *my personal config*. However if there's any problem
 
 ### 搜索操作
 - 正常模式下，\\+d+f 等价于展示所有文件并进行搜索
+- 正常模式下，\\+w+f 等价于根据文件内容进行搜索需要安装（brew install ripgrep）
 - 正常模式下，F11 等价于展示在buffer中文件并进行搜索
 - 正常模式下，ctrl+p 等价于展示在buffer中文件并进行搜索
 - 正常模式下，\\+s+s 等价于在当前文件中搜索
@@ -109,4 +109,4 @@ For now, you don't, this is *my personal config*. However if there's any problem
 - 正常模式下，\\+t+f等价于终端弹出方式为浮窗
 
 ### git操作
-- 正常模式下，\+h+b等价于查看当前行的commit
+- 正常模式下，\\+h+b等价于查看当前行的commit
