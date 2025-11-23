@@ -10,7 +10,7 @@ end
 
 -- keymaps
 vim.api.nvim_create_autocmd("FileType", {
-    pattern = {"rust", "haskell", "cpp"},
+    pattern = {"rust", "haskell", "cpp", "go", "scala"},
     callback = function()
         vim.schedule(function()
             vim.keymap.set("i", "<C-;>", "::", {buffer = true})
@@ -51,6 +51,11 @@ vim.keymap.set("n", "<leader>db", function() telescope_builtin.buffers() end)
 vim.keymap.set("n", "<leader>dc", function() telescope_builtin.colorscheme() end)
 vim.keymap.set("n", "<leader>dr", function() telescope_builtin.registers() end)
 vim.keymap.set({ "n", "i" }, "<C-p>", function() telescope_builtin.registers() end)
+-- window jump
+vim.keymap.set('n', '<C-J>', '<C-W>j')
+vim.keymap.set('n', '<C-K>', '<C-W>k')
+vim.keymap.set('n', '<C-L>', '<C-W>l')
+vim.keymap.set('n', '<C-H>', '<C-W>h')
 -- w: window
 vim.keymap.set("n", "<leader>w1", "<c-w>o")
 vim.keymap.set("n", "<leader>wx", ":x<cr>")
