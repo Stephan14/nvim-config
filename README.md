@@ -111,3 +111,8 @@ For now, you don't, this is *my personal config*. However if there's any problem
 
 ### git操作
 - 正常模式下，\\+h+b等价于查看当前行的commit
+- 正常模式下，\\+h+l 等价于查看当前行的 git blame
+- 正常模式下，\\+h+t 等价于开关行内 git blame 提示
+- 正常模式下，\\+h+c 等价于预览当前改动块（hunk）
+- 正常模式下，\\+h+d 等价于对当前文件做 diff
+- 正常模式下，\\+h+v 等价于在浮窗中查看当前行所属 commit 的完整改动
