@@ -1,28 +1,26 @@
 local M = {}
 
 function M.config()
-    -- Set up nvim-lspconfig.
+    -- Set up LSP servers via the Neovim 0.11+ native API.
+    -- nvim-lspconfig ships `lsp/<server>.lua` definitions on the runtimepath,
+    -- so `vim.lsp.config`/`vim.lsp.enable` pick up its defaults automatically.
     -- List of all pre-configured LSP servers:
-    -- github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
-    
-    -- Servers without extra config
-    local servers = { "pylsp", "html", "zls", "clangd", "gopls", 'lua_ls' }
-    local lspconfig = require("lspconfig")
-    for _, lsp in pairs(servers) do
-        lspconfig[lsp].setup {}
-    end
+    -- github.com/neovim/nvim-lspconfig/tree/master/lsp
 
-    -- Servers with extra config
-    lspconfig["rust_analyzer"].setup {                
-        settings = {                      
+    -- Servers with extra config (merged on top of lspconfig defaults).
+    vim.lsp.config("rust_analyzer", {
+        settings = {
             ["rust-analyzer"] = {
                 procMacro = { enable = true },
             }
         }
-    }
-    lspconfig["clangd"].setup {
-        cmd = {"clangd", "-header-insertion=never" }
-    }
+    })
+    vim.lsp.config("clangd", {
+        cmd = { "clangd", "-header-insertion=never" }
+    })
+
+    -- Enable all servers.
+    vim.lsp.enable({ "pylsp", "html", "zls", "clangd", "gopls", "lua_ls", "rust_analyzer" })
 
     require("lspsaga").setup({
         ui = {
