@@ -40,6 +40,9 @@ end, {silent = true})
 -- f: file tree
 vim.keymap.set("n", "<F3>", ":Oil<cr>")
 vim.keymap.set("n", "<leader>ft", ":Oil<cr>")
+-- neo-tree: sidebar file tree (does not replace the code window)
+vim.keymap.set("n", "<leader>e", ":Neotree toggle<cr>")
+vim.keymap.set("n", "<F2>", ":Neotree toggle<cr>")
 
 -- d: telescope
 local telescope_builtin = require("telescope.builtin")

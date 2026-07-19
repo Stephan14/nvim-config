@@ -24,6 +24,7 @@ require("lazy").setup({
     "nvim-lua/plenary.nvim",
     "MunifTanjim/nui.nvim",
     'stevearc/oil.nvim',
+    "nvim-neo-tree/neo-tree.nvim",
     "akinsho/bufferline.nvim",
     "moll/vim-bbye",
 
