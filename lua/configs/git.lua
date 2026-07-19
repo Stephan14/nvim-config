@@ -106,7 +106,7 @@ function M.config()
         },
     }
 
-    vim.keymap.set("n", "<leader>hv", show_commit_under_cursor,
+    vim.keymap.set("n", "\\hv", show_commit_under_cursor,
         { desc = "查看光标所在行所属 commit 的完整改动" })
 end
 
