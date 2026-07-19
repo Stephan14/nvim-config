@@ -36,7 +36,7 @@ require("lazy").setup({
     "hrsh7th/cmp-cmdline",
     "hrsh7th/nvim-cmp",
     "L3MON4D3/LuaSnip",
-    "nvim-treesitter/nvim-treesitter",
+    { "nvim-treesitter/nvim-treesitter", branch = "master" },
     "dnlhc/glance.nvim",
     "tamago324/nlsp-settings.nvim",
     "folke/trouble.nvim",
