@@ -85,6 +85,7 @@ require("configs.grammar").config()
 require("configs.terminal").config()
 require("configs.filemanager").config()
 require("configs.neotree").config()
+require("configs.aerial").config()
 require("configs.telescope").config()
 
 --- If there is a `configs.lang.ft`, load it and call `.config()` on it.

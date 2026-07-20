@@ -25,6 +25,7 @@ require("lazy").setup({
     "MunifTanjim/nui.nvim",
     'stevearc/oil.nvim',
     "nvim-neo-tree/neo-tree.nvim",
+    "stevearc/aerial.nvim",
     "akinsho/bufferline.nvim",
     "moll/vim-bbye",
 

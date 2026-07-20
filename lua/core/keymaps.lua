@@ -43,6 +43,12 @@ vim.keymap.set("n", "<leader>ft", ":Oil<cr>")
 -- neo-tree: sidebar file tree (does not replace the code window)
 vim.keymap.set("n", "<leader>e", ":Neotree toggle<cr>")
 vim.keymap.set("n", "<F2>", ":Neotree toggle<cr>")
+-- aerial: code outline (classes/functions in the current file)
+vim.keymap.set("n", "<leader>o", ":AerialToggle right<cr>")
+vim.keymap.set("n", "<F4>", ":AerialToggle right<cr>")
+vim.keymap.set("n", "<leader>on", ":AerialNext<cr>")
+vim.keymap.set("n", "<leader>op", ":AerialPrev<cr>")
+vim.keymap.set("n", "<leader>of", ":Telescope aerial<cr>")
 
 -- d: telescope
 local telescope_builtin = require("telescope.builtin")
