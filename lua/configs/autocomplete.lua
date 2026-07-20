@@ -111,6 +111,15 @@ function M.config()
         lightbulb = {
             enable = false, -- Annoying
         },
+        symbol_in_winbar = {
+            enable = true,
+            -- Show more parent folders in the winbar so same-named files (e.g.
+            -- multiple init.lua / index.ts) can be told apart at a glance.
+            -- lspsaga counts folders backward from the filename rather than
+            -- from the project root, so a larger value surfaces enough of the
+            -- path to disambiguate.
+            folder_level = 4,
+        },
         scroll_preview = {
             scroll_down = '<C-n>',
             scroll_up = '<C-p>',
